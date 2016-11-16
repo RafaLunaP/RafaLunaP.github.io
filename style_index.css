@@ -1,0 +1,77 @@
+/*font-family: 'Francois One', sans-serif;
+font-family: 'Droid Sans', sans-serif;*/
+
+/*Color secundario: #3268AC;
+Color principal: #1F3073;
+Color naranja: #ED8924*/
+
+body{
+	background-color: #1F3073;
+	background: url(assets/fondo.jpg);
+	background-position: center top;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+header{
+	height: 70px;
+	position: fixed;
+	width: 100vw;
+	background-color: #fff;
+	  background-image: -moz-linear-gradient(top, #FFF, #E0E0E0);
+	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#E0E0E0));
+	  background-image: -webkit-linear-gradient(top, #FFF, #E0E0E0);
+	  background-image: -o-linear-gradient(top, #FFF, #E0E0E0);
+	  background-image: linear-gradient(to bottom, #FFF, #E0E0E0);
+	  background-repeat: repeat-x;
+	  border-color: #FFF #FFF #E0E0E0;
+	  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	  opacity: .95;
+}
+
+#logotipo{
+	display: inline;
+	margin: 0;
+	width: 50%;
+	float: left;
+}
+
+#logotipo img{
+	padding: 10.5px 0 0 3vw;
+}
+
+nav{
+	text-align: right;
+	margin: 10px 1vw 0 0;
+}
+
+ul{
+	margin: 0;
+	display: inline-block;
+}
+
+ul li{
+	display: inline-block;
+	height: 53px;
+}
+
+li a{
+	vertical-align: middle;
+	font-family: 'Francois One', sans-serif;
+	font-size: 17px;
+	color: #1F3073;
+	text-decoration: none;
+	margin: 0;
+	padding-left: .5vw;
+	padding-right: .5vw;
+}
+
+ul li:hover{
+	border-bottom: 7px solid orange;
+	color: white;
+}
+
+.nav{
+	vertical-align: middle;
+	padding-right: .5vw;
+}
