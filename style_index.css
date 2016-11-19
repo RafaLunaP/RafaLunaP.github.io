@@ -72,7 +72,7 @@ ul li:hover{
 }
 
 #portada{
-	padding-top: 10%; /*103px*/
+	padding-top: 8%; /*103px*/
 }
 
 #logotipo2{
@@ -95,7 +95,7 @@ ul li:hover{
 	width: 647px;
 	background-color: rgba(0,0,0,.7);
 	margin: 1.4% auto auto auto; /*15px*/
-	border-radius: 1em 1em 1em 1em;
+	border-radius: 1em;
 }
 
 #acomodo_cita{
@@ -118,12 +118,12 @@ ul li:hover{
 }
 
 #redes1{
- padding-left: 60px;
- padding-top: 4%; /*25px*/
+	display: inline-block;
+	padding-top: 15px;
 }
 
 #redes1 p{
-	margin-bottom: 10px;
+	margin: 0 0 10px 0;
 	text-align: left;
 	font-size: 24px;
 	color: #FFF;
@@ -132,4 +132,46 @@ ul li:hover{
 
 #redes1 a{
 	padding-right: 5px;
+}
+
+#cta_contenedor{
+	width: 90%;
+	margin: 1.4% auto 0 auto;
+}
+
+#cta_contenedor2{
+	display: inline-block;
+	float: right;
+}
+
+#cta_contenedor3{
+	float: right;
+}
+
+#cta_contenedor3 div{
+	text-align: center;
+}
+
+#cta_contenedor3 a{
+	margin: 0;
+}
+#cta_contenedor2 p{
+	margin-top: 0;
+	text-align: center;
+	font-size: 24px;
+	color: #FFF;
+	font-family: 'Francois One', sans-serif;
+}
+
+#cta{
+	letter-spacing: .05em;
+	cursor: pointer;
+	text-align: center;
+	border: 6px solid #CC6A27;
+	padding: 11px 35px;
+	border-radius: 1em;
+	font-size: 24px;
+	color: #FFF;
+	font-family: 'Francois One', sans-serif;
+	background-color: #ED8924;
 }
