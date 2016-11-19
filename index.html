@@ -2,14 +2,16 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<title>Rafael Luna Paredes. Diseñador web / Frontend.</title>
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Francois+One" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style_index.css">
+	<script type="text/javascript" src="js/citas.js"></script>
 </head>
 <body>
 	<header>
-		<div id="logotipo">
-			<a href=""><img src="assets/logotipo.png" alt="Logotipo" /></a>
+		<div id="logotipo1">
+			<a href=""><img src="assets/logotipo.png" alt="Logotipo Rafael Luna" /></a>
 		</div>
 		<nav>
 			<ul>
@@ -28,5 +30,30 @@
 			</ul>
 		</nav>
 	</header>
+	<section id="portada">
+		<div id="logotipo2">
+			<img src="assets/logotipo_blanco.png" alt="Logotipo Rafael Luna">
+			<p>Diseñador web / Frontend</p>
+		</div>
+		<div class="marco_citas">
+			<div id="acomodo_cita">
+				<p id="titulo_cita">Cita del día</p>
+					<p id="cita">
+					<script>
+					document.write(autor[day])
+					</script>
+				</p>
+			</div>
+		</div>
+		<div id="redes1">
+			<p>Visitame en las redes:</p>
+			<a href="https://www.facebook.com/rafael.lunaparedes" target="_blank"><img src="assets/face.png" alt="Facebook" class="boton_red"/></a>
+			<a href="http://www.linkedin.com/pub/rafael-luna-paredes/88/65a/582" target="_blank"><img src="assets/drib.png" alt="Dribble" class="boton_red"/></a>
+			<a href="http://www.linkedin.com/pub/rafael-luna-paredes/88/65a/582" target="_blank"><img src="assets/lin.png" alt="LinkedIn" class="boton_red"/></a>
+			<a href="http://www.linkedin.com/pub/rafael-luna-paredes/88/65a/582" target="_blank"><img src="assets/beh.png" alt="Behance" class="boton_red"/></a>
+			<a href="http://www.linkedin.com/pub/rafael-luna-paredes/88/65a/582" target="_blank"><img src="assets/git.png" alt="Github" class="boton_red"/></a>
+			<a href="http://www.linkedin.com/pub/rafael-luna-paredes/88/65a/582" target="_blank"><img src="assets/vim.png" alt="Vimeo" class="boton_red"/></a>
+		</div>
+	</section>
 </body>
 </html>

@@ -6,11 +6,12 @@ Color principal: #1F3073;
 Color naranja: #ED8924*/
 
 body{
+	margin: 0;
 	background-color: #1F3073;
 	background: url(assets/fondo.jpg);
-	background-position: center top;
 	background-attachment: fixed;
-	margin: 0;
+	background-size: cover;
+	height: 100vh;
 }
 
 header{
@@ -29,14 +30,11 @@ header{
 	  opacity: .95;
 }
 
-#logotipo{
-	display: inline;
-	margin: 0;
-	width: 50%;
+#logotipo1{
 	float: left;
 }
 
-#logotipo img{
+#logotipo1 img{
 	padding: 10.5px 0 0 3vw;
 }
 
@@ -47,21 +45,18 @@ nav{
 
 ul{
 	margin: 0;
-	display: inline-block;
 }
 
 ul li{
 	display: inline-block;
-	height: 53px;
+	padding-bottom: 8px;
 }
 
 li a{
-	vertical-align: middle;
 	font-family: 'Francois One', sans-serif;
 	font-size: 17px;
 	color: #1F3073;
 	text-decoration: none;
-	margin: 0;
 	padding-left: .5vw;
 	padding-right: .5vw;
 }
@@ -74,4 +69,67 @@ ul li:hover{
 .nav{
 	vertical-align: middle;
 	padding-right: .5vw;
+}
+
+#portada{
+	padding-top: 103px;
+}
+
+#logotipo2{
+	width: 810px;
+	margin: auto;
+}
+
+#logotipo2 p{
+	text-align: right;
+	margin: 0;
+	position: relative;
+	top: -38px;
+	font-family: 'Francois One', sans-serif;
+	color: white;
+	font-size: 35px;
+}
+
+.marco_citas{
+	height: auto;
+	width: 647px;
+	background-color: rgba(0,0,0,.7);
+	margin: 15px auto auto auto;
+	border-radius: 1em 1em 1em 1em;
+}
+
+#acomodo_cita{
+	padding:17px 19px 33px 19px;
+}
+
+#titulo_cita{
+	margin: 0;
+	font-size: 30px;
+	color: #FFF;
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+}
+
+#cita{
+	text-align: left;
+	font-size: 18px;
+	color: #FFF;
+	font-family: 'Francois One', sans-serif;
+}
+
+#redes1{
+ padding-left: 60px;
+ padding-top: 25px;
+}
+
+#redes1 p{
+	margin-bottom: 10px;
+	text-align: left;
+	font-size: 24px;
+	color: #FFF;
+	font-family: 'Francois One', sans-serif;	
+}
+
+#redes1 a{
+	padding-right: 5px;
 }
