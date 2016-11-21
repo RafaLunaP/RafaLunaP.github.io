@@ -52,16 +52,16 @@ nav{
 	margin: 10px 2vw 0 0;
 }
 
-ul{
+nav ul{
 	margin: 0;
 }
 
-ul li{
+nav ul li{
 	display: inline-block;
 	padding-bottom: 8px;
 }
 
-li a{
+nav li a{
 	font-family: 'Francois One', sans-serif;
 	font-size: 17px;
 	color: #1F3073;
@@ -70,7 +70,7 @@ li a{
 	padding-right: .5vw;
 }
 
-ul li:hover{
+nav ul li:hover{
 	border-bottom: 7px solid orange;
 	color: white;
 }
