@@ -325,3 +325,13 @@ a.bluecircle img {
 	border-radius: 1.5em;
 	cursor: pointer;
 }
+
+.cd-slider-wrapper {
+    transition: width 0.4s;
+    width: 50%; 
+}
+
+.cd-slider-active .cd-slider-wrapper {
+    width: 100%; 
+} 
+
