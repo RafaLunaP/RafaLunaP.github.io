@@ -313,7 +313,7 @@ a.bluecircle:before {
 }
 
 a.bluecircle:hover:before {
-	background: rgba(0, 138, 184, .5);	
+	background: rgba(0, 138, 184, .5);
 }
 
 a.bluecircle:hover {
@@ -325,3 +325,4 @@ a.bluecircle img {
 	border-radius: 1.5em;
 	cursor: pointer;
 }
+
