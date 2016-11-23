@@ -285,22 +285,17 @@ ul li:hover{
 	height: 167px;
 }
 
-.muestra img{
-	width: 167px;
-	border-radius: 1.5em;
-	cursor: pointer;
-}
-
-a.bluecircle {
+div.bluecircle {
     display: block;
-    /*filter: grayscale(100%);*/
+    filter: saturate(100%);
     height: 167px;
     position: relative;
     margin-bottom: 40px;
     width: 167px;
+    /*transition: background .2s linear;*/
 }
 
-a.bluecircle:before {
+/*div.bluecircle:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -312,17 +307,158 @@ a.bluecircle:before {
     transition: background .2s linear;
 }
 
-a.bluecircle:hover:before {
+div.bluecircle:hover:before {
 	background: rgba(0, 138, 184, .5);
+}*/
+
+div.bluecircle:hover {
+	filter: saturate(125%);
 }
 
-a.bluecircle:hover {
-	filter: grayscale(0%);	
-}
-
-a.bluecircle img {
+div.bluecircle img {
 	width: 167px;
 	border-radius: 1.5em;
-	cursor: pointer;
+    cursor: pointer;
+    transition: 0.3s
 }
 
+div.bluecircle img:hover{
+	box-shadow: 6px 6px 15px #888;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: auto;
+  padding-right: 8px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  display: block;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+  border-radius: .5em;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width:677px){
+  .mySlides img{
+    width: 320px;
+    max-width: 100%;
+  }
+
+@media screen and (max-width:500px){
+  .mySlides img{
+    width: 320px;
+  }

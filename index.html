@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Francois+One" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style_index.css">
 	<script type="text/javascript" src="js/citas.js"></script>
+	<script type="text/javascript" src="js/galeria.js"></script>
 
 	<!-- Add jQuery library -->
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
@@ -111,41 +112,74 @@
 				</div>
 				<section class="cuadro_blanco2">
 					<article>
-					<a class="bluecircle" href="assets/portafolio/3D_Casa.jpg"><img src="assets/portafolio/miniaturas/3D_Casa_min.jpg"></a>
+					  <div class="bluecircle">
+					    <img src="assets/portafolio/miniaturas/3D_Casa_min.jpg" onclick="openModal();currentSlide(1)">
+					  </div>
 					</article>
 					<article>
-					<a class="bluecircle" href="http://www.google.com"><img src="assets/portafolio/miniaturas/3D_lampara_min.jpg"></a>
+						<div class="bluecircle">
+					    <img src="assets/portafolio/miniaturas/3D_lampara_min.jpg" onclick="openModal();currentSlide(2)">
+					  </div>
 					</article>
 					<article>
-					<a class="bluecircle"><img src="assets/portafolio/miniaturas/Alimento_Final_min.jpg"></a>
+						<div class="bluecircle">
+							<img src="assets/portafolio/miniaturas/Alimento_Final_min.jpg" onclick="openModal();currentSlide(3)">
+						</div>
 					</article>
 					<article>
-					<a class="bluecircle"><img src="assets/portafolio/miniaturas/Carro_Final_min.jpg"></a>
+						<div class="bluecircle">
+					    <img src="assets/portafolio/miniaturas/Carro_Final_min.jpg" onclick="openModal();currentSlide(4)">
+					  </div>
 					</article>
-					<article>
-					<a class="bluecircle"><img src="assets/portafolio/miniaturas/Lentes_Final2_min.jpg"></a>
-					</article>
-					<article>
-					<a class="bluecircle"><img src="assets/portafolio/miniaturas/Lentes_Final_min.jpg"></a>
-					</article>
-					<article>
-					<a class="bluecircle"><img src="assets/portafolio/miniaturas/Logo_Luna3D_min.jpg"></a>
-					</article>
-					<article>
-					<a class="bluecircle"><img src="assets/portafolio/miniaturas/Logo_Luna_Final2_min.jpg"></a>
-					</article>
-					<article>
-					<a class="bluecircle"><img src="assets/portafolio/miniaturas/Mascota_Final_min.jpg"></a>
-					</article>
-					<article>
-					<a class="bluecircle"><img src="assets/portafolio/miniaturas/Poster_Carro_min.jpg"></a>
-					</article>
-					<article>
-					<a class="bluecircle"><img src="assets/portafolio/miniaturas/Producto_Final_min.jpg"></a>
-					</article>
-					<article>
-					<a class="bluecircle"><img src="assets/portafolio/miniaturas/Logo1_Revista2_min.jpg"></a>
-					</article>
+					  
+					</div>
+
+					<div id="myModal" class="modal">
+					  <span class="close cursor" onclick="closeModal()">&times;</span>
+					    <div class="modal-content"/>
+
+					        <div class="mySlides">
+					          <div class="numbertext">1 / 4</div>
+					          <img src="assets/portafolio/3D_Casa.jpg">
+					        </div>
+
+					        <div class="mySlides">
+					          <div class="numbertext">2 / 4</div>
+					          <img src="assets/portafolio/3D_lampara.jpg">
+					        </div>
+
+					        <div class="mySlides">
+					          <div class="numbertext">3 / 4</div>
+					          <img src="assets/portafolio/Alimento_Final.jpg">
+					        </div>
+					        
+					        <div class="mySlides">
+					          <div class="numbertext">4 / 4</div>
+					          <img src="assets/portafolio/Carro_Final.jpg">
+					        </div>
+					    
+					    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					    <div class="caption-container">
+					      <p id="caption"></p>
+					    </div>
+
+
+					    <div class="column">
+					      <img class="demo cursor" src="assets/portafolio/current/3D_Casa_min.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+					    </div>
+					    <div class="column">
+					      <img class="demo cursor" src="assets/portafolio/current/3D_lampara_min.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+					    </div>
+					    <div class="column">
+					      <img class="demo cursor" src="assets/portafolio/current/Alimento_Final_min.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+					    </div>
+					    <div class="column">
+					      <img class="demo cursor" src="assets/portafolio/current/Carro_Final_min.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+					    </div>
+					  </div>
+					</div>					
 
 												
 
