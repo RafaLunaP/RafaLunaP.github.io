@@ -1,4 +1,5 @@
-// JavaScript Document
+// Código js para la cita de la portada
+
 		var autor=new Array() 
 		
 		autor[0] = "El diseño es un plan para ordenar elementos de la mejor manera posible para llevar a cabo un propósito particular. -Charles Eames-";
@@ -105,10 +106,45 @@
 
 		autor[51] = "El diseño es una respuesta formal a una pregunta estratégica. -Mariona López-";
 
-
-		//Esto es solo un ejemplo de como usar random
-		//var whichquote = Math.floor(Math.random()*(autor.length))
-
 		var now = new Date ();
 
 		var day = now.getDate();		
+
+// Código js para la galería
+
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}

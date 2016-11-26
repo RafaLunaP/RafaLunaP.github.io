@@ -7,11 +7,13 @@
 	<title>Rafael Luna Paredes. Diseñador web / Frontend.</title>
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Francois+One" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style_index.css">
-	<script type="text/javascript" src="js/citas.js"></script>
-	<script type="text/javascript" src="js/galeria.js"></script>
+	<script type="text/javascript" src="js/cita_galeria.js"></script>
 
 	<!-- Add jQuery library -->
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.smoothState.js"></script>
+	<script type="text/javascript" src="js/smoothNav.js"></script>
 
 
 
@@ -21,7 +23,8 @@
 
 	<header>
 		<div id="logotipo1">
-			<a href="#portada"><img src="assets/logotipo.png" alt="Logotipo Rafael Luna" /></a>
+			<a href="#portada"><img src="assets/logotipo.png" alt="Logotipo Rafael Luna"/>
+			</a>
 		</div>
 		<nav>
 			<ul>
@@ -32,7 +35,7 @@
 				<a href="#portafolio"><img src="assets/port_azul.png" alt="Portafolio" class="nav">Portafolio</a>
 				</li>
 				<li>
-				<a href=""><img src="assets/faq_azul.png" alt="Faq" class="nav">FAQ</a>
+				<a href="faq.html"><img src="assets/faq_azul.png" alt="Faq" class="nav">FAQ</a>
 				</li>
 				<li>
 				<a href="#contacto"><img src="assets/cont_azul.png" alt="Contactame" class="nav">Contactame</a>
@@ -70,7 +73,7 @@
 				<div id="cta_contenedor3">
 					<p>¿Necesitas un sitio web?</p>
 					<div>
-					<a id="cta">EMPEZAR</a>
+					<a id="cta" href="#contacto">EMPEZAR</a>
 					</div>
 				</div>
 			</div>
@@ -115,62 +118,62 @@
 				<!-- IMAGENES PRESENTACIÓN -->
 
 					<article>
-					  <div class="bluecircle">
+					  <div class="previoPortafolio">
 					    <img src="assets/portafolio/miniaturas/3D_Casa_min.jpg" onclick="openModal();currentSlide(1)">
 					  </div>
 					</article>
 					<article>
-						<div class="bluecircle">
+						<div class="previoPortafolio">
 					    <img src="assets/portafolio/miniaturas/3D_lampara_min.jpg" onclick="openModal();currentSlide(2)">
 					  </div>
 					</article>
 					<article>
-						<div class="bluecircle">
+						<div class="previoPortafolio">
 							<img src="assets/portafolio/miniaturas/Alimento_Final_min.jpg" onclick="openModal();currentSlide(3)">
 						</div>
 					</article>
 					<article>
-						<div class="bluecircle">
+						<div class="previoPortafolio">
 					    <img src="assets/portafolio/miniaturas/Carro_Final_min.jpg" onclick="openModal();currentSlide(4)">
 					  </div>
 					</article>
 					<article>
-						<div class="bluecircle">
+						<div class="previoPortafolio">
 					    <img src="assets/portafolio/miniaturas/Lentes_Final2_min.jpg" onclick="openModal();currentSlide(5)">
 					  </div>
 					</article>
 					<article>
-						<div class="bluecircle">
+						<div class="previoPortafolio">
 					    <img src="assets/portafolio/miniaturas/Lentes_Final_min.jpg" onclick="openModal();currentSlide(6)">
 					  </div>
 					</article>
 					<article>
-						<div class="bluecircle">
+						<div class="previoPortafolio">
 					    <img src="assets/portafolio/miniaturas/Logo1_Revista2_min.jpg" onclick="openModal();currentSlide(7)">
 					  </div>
 					</article>
 					<article>
-						<div class="bluecircle">
+						<div class="previoPortafolio">
 					    <img src="assets/portafolio/miniaturas/Logo_Luna3D_min.jpg" onclick="openModal();currentSlide(8)">
 					  </div>
 					</article>
 					<article>
-						<div class="bluecircle">
+						<div class="previoPortafolio">
 					    <img src="assets/portafolio/miniaturas/Logo_Luna_Final2_min.jpg" onclick="openModal();currentSlide(9)">
 					  </div>
 					</article>
 					<article>
-						<div class="bluecircle">
+						<div class="previoPortafolio">
 					    <img src="assets/portafolio/miniaturas/Mascota_Final_min.jpg" onclick="openModal();currentSlide(10)">
 					  </div>
 					</article>
 					<article>
-						<div class="bluecircle">
+						<div class="previoPortafolio">
 					    <img src="assets/portafolio/miniaturas/Poster_Carro_min.jpg" onclick="openModal();currentSlide(11)">
 					  </div>
 					</article>
 					<article>
-						<div class="bluecircle">
+						<div class="previoPortafolio">
 					    <img src="assets/portafolio/miniaturas/Producto_Final_min.jpg" onclick="openModal();currentSlide(12)">
 					  </div>
 					</article>
@@ -298,7 +301,7 @@
 	</section>
 
 
-<section class="contenedor_principal">
+	<section class="contenedor_principal">
 		<div id="contacto">
 			<div class="fondo_gris">
 				<div class="titulo_seccion">
@@ -323,15 +326,9 @@
 							<a href=""><img src="assets/cont_azul.png">rafael.lunaparedes@gmail.com</a>
 						</div>
 					</div>
-					
-					
 				</div>
 			</div>
 		</div>
 	</section>
-	
-
-	
-
 </body>
 </html>
