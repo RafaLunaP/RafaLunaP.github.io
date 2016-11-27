@@ -340,6 +340,7 @@ div.previoPortafolio:hover {
 
 div.previoPortafolio img {
 	width: 167px;
+	height: 167px;
 	border-radius: 1.5em;
     cursor: pointer;
     transition: 0.3s
@@ -353,6 +354,11 @@ div.previoPortafolio img:hover{
   float: left;
   width: auto;
   padding-right: 8px;
+}
+
+.column img{
+	width: 80px;
+	height: 80px;
 }
 
 /* The Modal (background) */
