@@ -8,8 +8,8 @@ function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+// var slideIndex = 1;
+//   showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
