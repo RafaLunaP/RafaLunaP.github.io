@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?irsauc');
+  src:  url('fonts/icomoon.eot?irsauc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?irsauc') format('truetype'),
+    url('fonts/icomoon.woff?irsauc') format('woff'),
+    url('fonts/icomoon.svg?irsauc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circle-down:before {
+  content: "\ea43";
+}
+
+.icon-close:before {
+  content: "\ea0d";
+}
+
+
 /*font-family: 'Francois One', sans-serif;
 font-family: 'Droid Sans', sans-serif;*/
 
@@ -12,7 +47,6 @@ body{
 	background-attachment: fixed;
 	background-size: cover;
 	height: 100vh;
-
 	animation-duration: 0.8s;
 	transition-timing-function: linear;
 	animation-fill-mode: both;
@@ -54,12 +88,11 @@ h3{
 	margin: 10.5px 0 0 2vw;
 	padding-left: .75%;
 	padding-right: .75vw;
-	padding-bottom: 3px;
+	padding-bottom: 6px;
 }
 
 #logotipo1 img:hover{
-	border-bottom: 7px solid orange;
-	color: white;
+	border-bottom: 4px solid orange;
 }
 
 nav{
@@ -544,11 +577,193 @@ div.previoPortafolio img:hover{
 100% { opacity: 1; }
 }
 
-@media screen and (max-width:677px){
-  .mySlides img{
-    width: 320px;
-    max-width: 100%;
-  }
+
+.menu-button{
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	display: none;
+	font-size: 20px;
+	text-align: center;
+	color: #1F3073;
+
+
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding-right: 18px;
+	margin-top: 16px;
+
+}
+
+.menu-button p{
+	font-family: 'Francois One', sans-serif;
+	font-size: 17px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	padding-right: 35px;
+}
+
+
+@media screen and (max-width: 1280px){
+
+	#cta_contenedor{
+		width: 90%;
+	}
+
+}
+
+@media screen and (max-width: 960px){
+
+	.contenedor_principal{
+		width: 100%;
+	}
+
+	.fondo_gris{
+		border-radius: 0;
+	}
+
+	div.previoPortafolio {
+	    height: 150px;
+	    width: 150px;
+	}
+
+	div.previoPortafolio img {
+		width: 150px;
+		height: 150px;
+	}
+
+}
+
+@media screen and (max-width:800px){
+
+	#portada{
+		padding-top: 103px;
+	}
+
+	#logotipo2{
+		width: 90%;
+	}
+
+	#cta_contenedor{
+		margin: 4.5% auto 0 auto;
+	}
+
+	#foto_perfil{
+		width: 200px;
+		margin-right: 10px;
+	}
+
+	#cuadro_blanco{
+		background-color: white;
+		width: 420px;
+		margin-right: 0;
+	}
+
+	.fondo_gris{
+		padding: 26px 40px;
+	}
+
+	#modulo{
+		text-align: center;
+		padding-bottom: 0;
+	}
+
+	.botones_azules{
+		margin: 0 25px;
+	}
+
+	.cuadro_blanco2 article{
+		margin: 10px auto;
+	}
+
+}
+
+@media screen and (max-width:768px){
+
+	.cuadro_blanco2 article{
+		margin: 10px 3.5%;
+	}
+
+}
+
+@media screen and (max-width:767px){
+
+	#logotipo1{
+		float: inherit;
+	}
+
+	#logotipo1 img:hover{
+		border-bottom: 0px solid orange;
+	}
+
+	.menu-button{
+		display: inline-block;
+	}
+
+	.menu{
+		text-align: center;
+		height: auto;
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+		background-color: #fff;
+		  background-image: -moz-linear-gradient(top, #FFF, #E0E0E0);
+		  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#E0E0E0));
+		  background-image: -webkit-linear-gradient(top, #FFF, #E0E0E0);
+		  background-image: -o-linear-gradient(top, #FFF, #E0E0E0);
+		  background-image: linear-gradient(to bottom, #FFF, #E0E0E0);
+		  background-repeat: repeat-x;
+		  border-color: #FFF #FFF #E0E0E0;
+		  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+		  opacity: .9;
+		  margin: 0;
+		display: none;
+		transition: 2s;
+	}
+
+	.menu.active{
+		display: block;
+	}
+
+	ul{
+		padding: 0;
+	}
+
+	ul li{
+		padding: 8px 0;
+		margin: 0 3%;
+	}
+
+	ul li img{
+		width: 35px;
+	}
+
+
+	#logotipo2 img{
+		width: 90%;
+		margin: auto;
+	}
+
+	#logotipo2 h2{
+		top: -28px;
+		font-size: 25px;
+	}
+
+	.mySlides img{
+		width: 320px;
+		max-width: 100%;
+	}
+
+
+
+	
+
+
+
 
 @media screen and (max-width:500px){
   .mySlides img{

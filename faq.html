@@ -18,7 +18,8 @@
 		<div id="logotipo1">
 			<a href="index.html"><img src="assets/logotipo.png" alt="Logotipo Rafael Luna" /></a>
 		</div>
-		<nav>
+		<span class="menu-button icon-circle-down" id="menu-button"><p>Menu</p></span>
+		<nav class="menu" id="menu">
 			<ul>
 				<li>
 				<a href="index.html#sobre_mi"><img src="assets/sobre_azul.png" alt="Sobre mi" class="nav">Sobre mi</a>
@@ -59,6 +60,18 @@
 	<!-- <script async src="js/jquery-3.1.1.min.js" type="text/javascript"></script> -->
 	<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.7.2/jquery.smoothState.min.js"></script>
 	<script async type="text/javascript" src="js/smoothNav.js"></script>
+
+	<script type="text/javascript">
+		var menuButton = document.getElementById('menu-button')
+		var menu = document.getElementById('menu')
+
+		menuButton.addEventListener('touchstart',toggleMenu);
+
+		function toggleMenu(){
+			menu.classList.toggle('active')
+			menuButton.classList.toggle('icon-close');
+		};
+	</script>
 
 </body>
 </html>
