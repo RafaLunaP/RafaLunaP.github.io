@@ -213,6 +213,7 @@ ul li:hover{
 #cta_contenedor3 a{
 	margin: 0;
 }
+
 #cta_contenedor2 p{
 	margin-top: 0;
 	text-align: center;
@@ -626,6 +627,34 @@ div.previoPortafolio img:hover{
 		border-radius: 0;
 	}
 
+
+	#foto_perfil{
+		width: 25%;
+	}
+
+	#cuadro_blanco{
+		width: 65%;
+		margin: 0;
+	}
+
+	#modulo{
+		text-align: center;
+		top: 0;
+	}
+
+	.botones_azules{
+r5		margin: 0px 15px;
+	}
+
+	.cuadro_blanco2{
+		padding: 24px;
+	}
+
+	.cuadro_blanco2 article{
+		display: inline-block;
+		margin: 5px;
+	}
+
 	div.previoPortafolio {
 	    height: 150px;
 	    width: 150px;
@@ -667,25 +696,8 @@ div.previoPortafolio img:hover{
 		padding: 26px 40px;
 	}
 
-	#modulo{
-		text-align: center;
-		padding-bottom: 0;
-	}
-
 	.botones_azules{
 		margin: 0 25px;
-	}
-
-	.cuadro_blanco2 article{
-		margin: 10px auto;
-	}
-
-}
-
-@media screen and (max-width:768px){
-
-	.cuadro_blanco2 article{
-		margin: 10px 3.5%;
 	}
 
 }
@@ -753,17 +765,59 @@ div.previoPortafolio img:hover{
 		font-size: 25px;
 	}
 
-	.mySlides img{
-		width: 320px;
-		max-width: 100%;
+	.marco_citas{
+		width: 80%;
+	}
+
+	#cta_contenedor{
+		width: auto;
+		margin: 3% 3% 0 3%;
+	}
+
+	#cta_contenedor p{
+		font-size: 18px;
+	}
+
+	#redes1 img{
+		width: 35px;
+	}
+
+	#cta{
+		padding: 9px 25px;
+		font-size: 20px;
+	}
+
+	#foto_perfil{
+		display: none;
+	}
+
+	#cuadro_blanco{
+		margin: 17px auto;
+		float: inherit;
+		position: inherit;
+		width: 94%;
+		padding: 3%;
+	}
+
+	.botones_azules{
+		margin: 5px 25px;
+	}
+
+	#redes_footer{
+		text-align: center;
+	}
+
+	#email{
+		display: inherit;
+		float: inherit;
 	}
 
 
 
-	
-
-
-
+	.mySlides img{
+		width: 320px;
+		max-width: 100%;
+	}
 
 @media screen and (max-width:500px){
   .mySlides img{
