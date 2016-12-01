@@ -916,6 +916,7 @@ div.previoPortafolio img:hover{
 	}
 
 	#cuadro_blanco{
+		width: auto;
 		padding: 6%;
 	}
 
