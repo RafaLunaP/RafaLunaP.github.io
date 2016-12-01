@@ -46,9 +46,20 @@ body{
 
 #background{
 	background-color: #1F3073;
-	background: url(assets/fondo.jpg);
-	background-attachment: fixed;
-	background-size: cover;
+	width: 100%;
+	height: 100%;  
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0; 
+	background-image: url(assets/fondo.jpg) ;
+	background-repeat:no-repeat;
+	background-position: center center;
+	/* background-attachment: fixed; removed for Android */
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 	animation-duration: 0.8s;
 	transition-timing-function: linear;
 	animation-fill-mode: both;
@@ -621,7 +632,7 @@ div.previoPortafolio img:hover{
 
 @media screen and (max-width: 960px){
 
-	#background{
+	/*#background{
 		background: url(assets/fondo960px.jpg);
 		background-attachment: fixed;
 		background-size: cover;
@@ -629,7 +640,7 @@ div.previoPortafolio img:hover{
 		transition-timing-function: linear;
 		animation-fill-mode: both;
 		animation-name: fadeIn;
-	}
+	}*/
 
 	.contenedor_principal{
 		width: 100%;
@@ -681,7 +692,7 @@ r5		margin: 0px 15px;
 
 @media screen and (max-width:800px){
 
-	#background{
+	/*#background{
 		background: url(assets/fondo800px.jpg);
 		background-attachment: fixed;
 		background-size: cover;
@@ -689,7 +700,7 @@ r5		margin: 0px 15px;
 		transition-timing-function: linear;
 		animation-fill-mode: both;
 		animation-name: fadeIn;
-	}
+	}*/
 
 	#portada{
 		padding-top: 103px;
@@ -843,7 +854,7 @@ r5		margin: 0px 15px;
 
 @media screen and (max-width:500px){
 	
-	#background{
+	/*#background{
 		background: url(assets/fondo500px.jpg);
 		background-attachment: fixed;
 		background-size: cover;
@@ -851,7 +862,7 @@ r5		margin: 0px 15px;
 		transition-timing-function: linear;
 		animation-fill-mode: both;
 		animation-name: fadeIn;
-	}
+	}*/
 
 	.mySlides img{
 		width: 320px;
