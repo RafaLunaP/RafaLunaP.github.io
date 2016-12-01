@@ -46,7 +46,6 @@ body{
 	background: url(assets/fondo.jpg);
 	background-attachment: fixed;
 	background-size: cover;
-	height: 100vh;
 	animation-duration: 0.8s;
 	transition-timing-function: linear;
 	animation-fill-mode: both;
@@ -619,6 +618,16 @@ div.previoPortafolio img:hover{
 
 @media screen and (max-width: 960px){
 
+	body{
+		background: url(assets/fondo960px.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		animation-duration: 0.8s;
+		transition-timing-function: linear;
+		animation-fill-mode: both;
+		animation-name: fadeIn;
+	}
+
 	.contenedor_principal{
 		width: 100%;
 	}
@@ -668,6 +677,16 @@ r5		margin: 0px 15px;
 }
 
 @media screen and (max-width:800px){
+
+	body{
+		background: url(assets/fondo800px.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		animation-duration: 0.8s;
+		transition-timing-function: linear;
+		animation-fill-mode: both;
+		animation-name: fadeIn;
+	}
 
 	#portada{
 		padding-top: 103px;
@@ -820,6 +839,17 @@ r5		margin: 0px 15px;
 	}
 
 @media screen and (max-width:500px){
-  .mySlides img{
-    width: 320px;
-  }
+	
+	body{
+		background: url(assets/fondo500px.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		animation-duration: 0.8s;
+		transition-timing-function: linear;
+		animation-fill-mode: both;
+		animation-name: fadeIn;
+	}
+
+	.mySlides img{
+		width: 320px;
+	}
