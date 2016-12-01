@@ -42,28 +42,13 @@ Color naranja: #ED8924*/
 
 body{
 	margin: 0;
-}
-
-#background{
-	background-color: #1F3073;
-	width: 100%;
-	height: 100%;  
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 0; 
-	background-image: url(assets/fondo.jpg) ;
-	background-repeat:no-repeat;
-	background-position: center center;
-	/* background-attachment: fixed; removed for Android */
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
+	background: url(assets/fondo.jpg);
+	background-size: cover;
 	animation-duration: 0.8s;
 	transition-timing-function: linear;
 	animation-fill-mode: both;
 	animation-name: fadeIn;
+	background-attachment: fixed;
 }
 
 header{
@@ -854,7 +839,7 @@ r5		margin: 0px 15px;
 
 @media screen and (max-width:500px){
 	
-	/*#background{
+	#background{
 		background: url(assets/fondo500px.jpg);
 		background-attachment: fixed;
 		background-size: cover;
@@ -862,7 +847,7 @@ r5		margin: 0px 15px;
 		transition-timing-function: linear;
 		animation-fill-mode: both;
 		animation-name: fadeIn;
-	}*/
+	}
 
 	.mySlides img{
 		width: 320px;
