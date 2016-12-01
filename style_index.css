@@ -644,16 +644,6 @@ div.previoPortafolio img:hover{
 
 @media screen and (max-width: 960px){
 
-	/*#background{
-		background: url(assets/fondo960px.jpg);
-		background-attachment: fixed;
-		background-size: cover;
-		animation-duration: 0.8s;
-		transition-timing-function: linear;
-		animation-fill-mode: both;
-		animation-name: fadeIn;
-	}*/
-
 	.contenedor_principal{
 		width: 100%;
 	}
@@ -678,7 +668,7 @@ div.previoPortafolio img:hover{
 	}
 
 	.botones_azules{
-r5		margin: 0px 15px;
+		margin: 0px 15px;
 	}
 
 	.cuadro_blanco2{
@@ -703,16 +693,6 @@ r5		margin: 0px 15px;
 }
 
 @media screen and (max-width:800px){
-
-	/*#background{
-		background: url(assets/fondo800px.jpg);
-		background-attachment: fixed;
-		background-size: cover;
-		animation-duration: 0.8s;
-		transition-timing-function: linear;
-		animation-fill-mode: both;
-		animation-name: fadeIn;
-	}*/
 
 	#portada{
 		padding-top: 103px;
@@ -857,24 +837,124 @@ r5		margin: 0px 15px;
 		float: inherit;
 	}
 
-
-
 	.mySlides img{
 		width: 320px;
 		max-width: 100%;
 	}
 
 @media screen and (max-width:500px){
-	
-	/*#background{
-		background: url(assets/fondo500px.jpg);
-		background-attachment: fixed;
-		background-size: cover;
-		animation-duration: 0.8s;
-		transition-timing-function: linear;
-		animation-fill-mode: both;
-		animation-name: fadeIn;
-	}*/
+
+	#logotipo1 img{
+		width: 60%;
+		max-width: 216px;
+	}
+
+	.menu-button{
+		padding-right: 3px;
+	}
+
+	.menu-button p{
+		padding-right: 20px;
+	}
+
+	#portada{
+		padding-top: 93px;
+	}
+
+	#logotipo2 img{
+		display: block;
+	}
+
+	#logotipo2 h1{
+		display: block;
+		position: inherit;
+		text-align: center;
+	}
+
+	.marco_citas{
+		width: 95%;
+		margin-top: 25px;
+	}
+
+	#redes1{
+		display: block;
+	}
+
+	#redes1{
+		text-align: center;
+	}
+
+	#redes1 p{
+		text-align: center;
+	}
+
+	#cta_contenedor2{
+		float: inherit;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	#cta_contenedor3{
+		float: inherit;
+		width: 100%;
+	}
+
+	.fondo_gris{
+		padding: 26px;
+	}
+
+	.titulo_seccion h2{
+		font-size: 23.5px;
+	}
+
+	.titulo_seccion h3{
+		font-size: 23.5px;
+	}
+
+	.titulo_seccion img{
+		width: 55px;
+	}
+
+	#cuadro_blanco{
+		padding: 6%;
+	}
+
+	.cuadro_blanco2{
+		padding: 6%;
+	}
+
+	.cuadro_blanco3{
+		padding: 6%;
+	}
+
+	.cuadro_blanco2 article{
+		margin: 10px;
+		height: 80px;
+	}
+
+	div.previoPortafolio {
+	    height: 80px;
+	    width: 80px;
+	}
+
+	div.previoPortafolio img {
+		width: 80px;
+		height: 80px;
+		border-radius: .75em;
+	}
+
+	#redes_footer p{
+		text-align: center;
+		padding-bottom: 5px;
+	}
+
+	#redes2 a{
+		padding-right: 0px;
+	}
+
+	#email a{
+		font-size: 16.5px;
+	}
 
 	.mySlides img{
 		width: 320px;
