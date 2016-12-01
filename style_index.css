@@ -78,6 +78,12 @@ header{
 	  opacity: .9;
 }
 
+h2{
+	font-family: 'Francois One', sans-serif;
+	color: #1F3073;
+	font-size: 22px;
+}
+
 h3{
 	font-family: 'Francois One', sans-serif;
 	color: #1F3073;
@@ -145,7 +151,7 @@ ul li:hover{
 	margin: auto;
 }
 
-#logotipo2 h2{
+#logotipo2 h1{
 	text-align: right;
 	margin: 0;
 	position: relative;
@@ -266,6 +272,17 @@ ul li:hover{
 .titulo_seccion img{
 	vertical-align: middle;
 	width: 79px;
+}
+
+.titulo_seccion h2{
+	font-family: 'Francois One', sans-serif;
+	font-size: 33.5px;
+	color: #1F3073;
+	display: inline-block;
+	margin:0;
+	bottom: -10px;
+	position: relative;
+	font-weight: normal;
 }
 
 .titulo_seccion h3{
@@ -788,7 +805,7 @@ r5		margin: 0px 15px;
 		margin: auto;
 	}
 
-	#logotipo2 h2{
+	#logotipo2 h1{
 		top: -28px;
 		font-size: 25px;
 	}
