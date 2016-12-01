@@ -42,6 +42,9 @@ Color naranja: #ED8924*/
 
 body{
 	margin: 0;
+}
+
+#background{
 	background-color: #1F3073;
 	background: url(assets/fondo.jpg);
 	background-attachment: fixed;
@@ -618,7 +621,7 @@ div.previoPortafolio img:hover{
 
 @media screen and (max-width: 960px){
 
-	body{
+	#background{
 		background: url(assets/fondo960px.jpg);
 		background-attachment: fixed;
 		background-size: cover;
@@ -678,7 +681,7 @@ r5		margin: 0px 15px;
 
 @media screen and (max-width:800px){
 
-	body{
+	#background{
 		background: url(assets/fondo800px.jpg);
 		background-attachment: fixed;
 		background-size: cover;
@@ -840,7 +843,7 @@ r5		margin: 0px 15px;
 
 @media screen and (max-width:500px){
 	
-	body{
+	#background{
 		background: url(assets/fondo500px.jpg);
 		background-attachment: fixed;
 		background-size: cover;
