@@ -549,27 +549,6 @@ div.previoPortafolio img:hover{
 	text-align: left;
 }
 
-#redes_footer{
-	width: 100%;
-	padding-top: 20px;
-}
-
-#redes2{
-	display: inline-block;
-}
-
-#redes2 p{
-	margin: 0 0 0px 0;
-	text-align: left;
-	font-size: 18.5px;
-	color: #656565;
-	font-family: 'Francois One', sans-serif;	
-}
-
-#redes2 a{
-	padding-right: 5px;
-}
-
 .cuadro_blanco3{
 	background-color: white;
 	border-radius: 1em;
@@ -579,22 +558,34 @@ div.previoPortafolio img:hover{
 	margin-top: 17px;
 }
 
-#email{
-	display: inline-block;
-	float: right;
-	padding-top: 25px;
+#redes_footer{
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
 }
 
-#email a{
+#redes2 p{
+	margin: 0 0 5px 0;
+	text-align: left;
+	font-size: 23px;
+	color: #656565;
 	font-family: 'Francois One', sans-serif;
-	color: #1F3073;
+}
+
+#redes2 a{
+	display: inline-block;
+	margin: 0 0 5px 0;
+	text-align: left;
 	font-size: 18.5px;
+	color: #656565;
+	font-family: 'Francois One', sans-serif;
+	padding-right: 15px;
 	text-decoration: none;
 }
 
-#email img{
+#redes2 img{
 	vertical-align: middle;
-	height: 32px;
+	width: 32px;
 	padding-right: 3px;
 }
 
@@ -688,6 +679,10 @@ div.previoPortafolio img:hover{
 	div.previoPortafolio img {
 		width: 150px;
 		height: 150px;
+	}
+
+	#redes_footer{
+		text-align: left;
 	}
 
 }
@@ -832,9 +827,14 @@ div.previoPortafolio img:hover{
 		text-align: center;
 	}
 
-	#email{
-		display: inherit;
-		float: inherit;
+	/*#redes2 p{
+		text-align: left;
+	}*/
+
+	#redes2 a{
+		padding: 3px 7.5px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.mySlides img{
@@ -944,19 +944,15 @@ div.previoPortafolio img:hover{
 		border-radius: .75em;
 	}
 
-	#redes_footer p{
-		text-align: center;
-		padding-bottom: 5px;
-	}
-
-	#redes2 a{
-		padding-right: 0px;
-	}
-
-	#email a{
-		font-size: 16.5px;
-	}
-
 	.mySlides img{
 		width: 320px;
 	}
+
+@media screen and (max-width:320px){
+
+	#redes2 a{
+		display: block;
+		text-align: center;
+	}
+
+}
