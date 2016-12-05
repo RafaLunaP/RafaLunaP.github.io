@@ -635,9 +635,9 @@ div.previoPortafolio img:hover{
 
 @media screen and (max-width: 987px){
 
-	/*#fondo{
+	#fondo{
 		height: 1380px;
-	}*/
+	}
 
 	.contenedor_principal{
 		width: 100%;
@@ -728,9 +728,9 @@ div.previoPortafolio img:hover{
 
 @media screen and (max-width:767px){
 
-	/*#fondo{
+	#fondo{
 		height: 1200px;
-	}*/
+	}
 
 	#logotipo1{
 		float: inherit;
@@ -852,9 +852,9 @@ div.previoPortafolio img:hover{
 
 @media screen and (max-width:500px){
 
-	/*#fondo{
+	#fondo{
 		height: 1000px;
-	}*/
+	}
 
 	#logotipo1 img{
 		width: 60%;
