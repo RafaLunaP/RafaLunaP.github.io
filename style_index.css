@@ -972,3 +972,10 @@ div.previoPortafolio img:hover{
 	}
 
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 220dpi){
+
+	#fondo{
+		background-image: url(assets/img_2x/fondo_2x.jpg) ;
+	}
+}
