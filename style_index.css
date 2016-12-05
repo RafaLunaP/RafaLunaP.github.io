@@ -960,10 +960,10 @@ div.previoPortafolio img:hover{
 		width: 320px;
 	}
 
-@media screen and (max-width:320px){
+@media screen and (max-width:360px){
 
 	#fondo{
-		height: 100%; /*700px*/
+		height: 700px;
 	}
 
 	#redes2 a{
