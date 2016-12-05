@@ -633,7 +633,11 @@ div.previoPortafolio img:hover{
 
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 987px){
+
+	#fondo{
+		height: 1380px;
+	}
 
 	.contenedor_principal{
 		width: 100%;
@@ -723,6 +727,10 @@ div.previoPortafolio img:hover{
 }
 
 @media screen and (max-width:767px){
+
+	#fondo{
+		height: 1200px;
+	}
 
 	#logotipo1{
 		float: inherit;
@@ -844,6 +852,10 @@ div.previoPortafolio img:hover{
 
 @media screen and (max-width:500px){
 
+	#fondo{
+		height: 1000px;
+	}
+
 	#logotipo1 img{
 		width: 60%;
 		max-width: 216px;
@@ -949,6 +961,10 @@ div.previoPortafolio img:hover{
 	}
 
 @media screen and (max-width:320px){
+
+	#fondo{
+		height: 700px;
+	}
 
 	#redes2 a{
 		display: block;
