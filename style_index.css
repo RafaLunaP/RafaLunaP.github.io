@@ -94,6 +94,14 @@ h3{
 	padding-top: 90px;
 }
 
+#proy{
+	padding-top: 90px;
+}
+
+#proy h3{
+	text-align: left;
+}
+
 #logotipo1{
 	float: left;
 }
@@ -337,6 +345,7 @@ ul li:hover{
 }
 
 .botones_azules{
+	text-decoration: none;
 	width: 167px;
 	display: inline-block;
 	cursor: pointer;

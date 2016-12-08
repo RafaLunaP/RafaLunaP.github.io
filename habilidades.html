@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<title>Rafael Luna Paredes. Diseñador web / Frontend.</title>
+	<meta name="author" content="Rafael Luna Paredes">
+    <meta name="description" content="Preguntas frecuentes de diseño web (Frontend)">
+    <meta name="keywords" content="Rafael Luna Paredes, Sitio Web, Rafael Luna, Frontend, Preguntas frecuentes, FAQ, Diseño web">
+</head>
+
+<body>
+
+<div id="fondo"></div>
+
+	<header>
+		<div id="logotipo1">
+			<a href="index.html"><img src="assets/logotipo.png" srcset="assets/logotipo.png 1x, assets/img_2x/logotipo_2x.png 2x" alt="Logotipo Rafael Luna"/></a>
+		</div>
+		<span class="menu-button icon-circle-down" id="menu-button"><p>Menu</p></span>
+		<nav class="menu" id="menu">
+			<ul>
+				<li>
+				<a href="index.html#sobre_mi"><img src="assets/sobre_azul.png" srcset="assets/sobre_azul.png 1x, assets/sobre_azul2.png 2x" alt="Sobre mi" class="nav">Sobre mi</a>
+				</li>
+				<li>
+				<a href="index.html#portafolio"><img src="assets/port_azul.png" srcset="assets/port_azul.png 1x, assets/port_azul2.png 2x" alt="Portafolio" class="nav">Portafolio</a>
+				</li>
+				<li>
+				<a href="faq.html"><img src="assets/faq_azul.png" srcset="assets/faq_azul.png 1x, assets/faq_azul2.png 2x" alt="Faq" class="nav">FAQ</a>
+				</li>
+				<li>
+				<a href="index.html#contacto"><img src="assets/cont_azul.png" srcset="assets/cont_azul.png 1x, assets/cont_azul2.png 2x" alt="Contactame" class="nav">Contactame</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+<section class="contenedor_principal">
+		<div id="faq">
+			<div class="fondo_gris">
+				<div class="titulo_seccion">
+					<img src="assets/hab_azul2.png" srcset="assets/hab_azul2.png 1x, assets/img_2x/hab_azul_2x.png 2x" alt="Preguntas Frecuentes"/>
+					<h2>Habilidades</h2>
+				</div>
+				<div class="cuadro_blanco3">
+					<h3>¿Que es un front-end?</h3>
+					<p class="texto">Un Front-end es una persona encargada del diseño del sitio web del lado del cliente.</p>
+					
+
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans%7CFrancois+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style_index.css">
+	<script async type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+	<!-- Add jQuery library -->
+	<!-- <script async src="js/jquery-3.1.1.min.js" type="text/javascript"></script> -->
+	<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.7.2/jquery.smoothState.min.js"></script>
+	<script async type="text/javascript" src="js/smoothNav.js"></script>
+
+	<script type="text/javascript">
+		var menuButton = document.getElementById('menu-button')
+		var menu = document.getElementById('menu')
+
+		menuButton.addEventListener('touchstart',toggleMenu);
+
+		function toggleMenu(){
+			menu.classList.toggle('active')
+			menuButton.classList.toggle('icon-close');
+		};
+	</script>
+
+</body>
+</html>

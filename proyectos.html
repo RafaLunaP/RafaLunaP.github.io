@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<title>Rafael Luna Paredes. Diseñador web / Frontend.</title>
+	<meta name="author" content="Rafael Luna Paredes">
+    <meta name="description" content="Preguntas frecuentes de diseño web (Frontend)">
+    <meta name="keywords" content="Rafael Luna Paredes, Sitio Web, Rafael Luna, Frontend, Preguntas frecuentes, FAQ, Diseño web">
+</head>
+
+<body>
+
+<div id="fondo"></div>
+
+	<header>
+		<div id="logotipo1">
+			<a href="index.html"><img src="assets/logotipo.png" srcset="assets/logotipo.png 1x, assets/img_2x/logotipo_2x.png 2x" alt="Logotipo Rafael Luna"/></a>
+		</div>
+		<span class="menu-button icon-circle-down" id="menu-button"><p>Menu</p></span>
+		<nav class="menu" id="menu">
+			<ul>
+				<li>
+				<a href="index.html#sobre_mi"><img src="assets/sobre_azul.png" srcset="assets/sobre_azul.png 1x, assets/sobre_azul2.png 2x" alt="Sobre mi" class="nav">Sobre mi</a>
+				</li>
+				<li>
+				<a href="index.html#portafolio"><img src="assets/port_azul.png" srcset="assets/port_azul.png 1x, assets/port_azul2.png 2x" alt="Portafolio" class="nav">Portafolio</a>
+				</li>
+				<li>
+				<a href="faq.html"><img src="assets/faq_azul.png" srcset="assets/faq_azul.png 1x, assets/faq_azul2.png 2x" alt="Faq" class="nav">FAQ</a>
+				</li>
+				<li>
+				<a href="index.html#contacto"><img src="assets/cont_azul.png" srcset="assets/cont_azul.png 1x, assets/cont_azul2.png 2x" alt="Contactame" class="nav">Contactame</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+<section class="contenedor_principal">
+		<div id="proy">
+			<div class="fondo_gris">
+				<div class="titulo_seccion">
+					<img src="assets/proy_azul2.png" srcset="assets/proy_azul2.png 1x, assets/img_2x/proy_azul_2x.png 2x" alt="Preguntas Frecuentes"/>
+					<h2>Proyectos</h2>
+				</div>
+
+
+				<section class="cuadro_blanco2">
+				<h3>Luna. Proyecto de página web.</h3>
+					<p class="texto">Proyecto pensado para su uso en responsive.</p>
+
+				<!-- IMAGENES PRESENTACIÓN -->
+
+					<article>
+					  <div class="previoPortafolio">
+					    <img src="assets/proyectos/miniaturas/logo-luna-final2-min.jpg" alt="Logotipo Luna" onclick="openModal();currentSlide(1)">
+					  </div>
+					</article>
+					<article>
+						<div class="previoPortafolio">
+					    <img src="assets/proyectos/miniaturas/logo-luna3D-min.jpg" alt="Modelado de logotipo en 3D" onclick="openModal();currentSlide(2)">
+					  </div>
+					</article>
+					
+
+					<!-- IMAGENES DE SLIDES -->
+
+					<div id="myModal" class="modal">
+					  <span class="close cursor" onclick="closeModal()">&times;</span>
+					    <div class="modal-content">
+
+					        <div class="mySlides">
+					          <div class="numbertext">1 / 2</div>
+					          <img src="assets/proyectos/logo-luna-final2.jpg" alt="Logotipo Luna">
+					        </div>
+
+					        <div class="mySlides">
+					          <div class="numbertext">2 / 2</div>
+					          <img src="assets/proyectos/logo-luna3D.jpg" alt="Modelado de logotipo en 3D">
+					        </div>
+
+
+					    
+					    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					    <div class="caption-container">
+					      <p id="caption"></p>
+					    </div>
+
+
+					    <!-- IMAGENES DE MINIGALERÍA -->
+
+					    <div class="column">
+					      <img class="demo cursor" src="assets/proyectos/current/logo-luna-final2-min.jpg" onclick="currentSlide(1)" alt="Logotipo Luna">
+					    </div>
+					    <div class="column">
+					      <img class="demo cursor" src="assets/proyectos/current/logo-luna3D-min.jpg" onclick="currentSlide(2)" alt="Modelado de logotipo en 3D (3dsMax)">
+					    </div>
+						</div>
+					</div>
+				</section>
+
+
+			</div>
+		</div>
+	</section>
+
+	<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/RafaLunaP/rafalunap.github.io/master/favicon.ico"/>
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans%7CFrancois+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style_index.css">
+	
+	<!-- Add jQuery library -->
+	<!-- <script async src="js/jquery-3.1.1.min.js" type="text/javascript"></script> -->
+	<script async type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script async type="text/javascript" src="js/galeria.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+
+	<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.7.2/jquery.smoothState.min.js"></script>
+	<script async type="text/javascript" src="js/smoothNav.js"></script>
+
+	<script type="text/javascript">
+		var menuButton = document.getElementById('menu-button')
+		var menu = document.getElementById('menu')
+
+		menuButton.addEventListener('touchstart',toggleMenu);
+
+		function toggleMenu(){
+			menu.classList.toggle('active')
+			menuButton.classList.toggle('icon-close');
+		};
+	</script>
+
+</body>
+</html>
