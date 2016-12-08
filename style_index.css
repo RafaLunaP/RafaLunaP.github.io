@@ -96,18 +96,13 @@ h2, h3, h4{
 	margin-bottom: 25px;
 }
 
-.caja-lenguaje img{
-	display: inline-block;
-	vertical-align: middle;
-	height: 65px;
-}
-
 .caja-lenguaje h4{
 	display: inline-block;
+	margin: 5px 0;
 }
 
 .caja-lenguaje p{
-	padding: 10px 0;
+	padding: 0;
 }
 #logotipo1{
 	float: left;
