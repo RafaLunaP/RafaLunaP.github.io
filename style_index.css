@@ -78,23 +78,13 @@ header{
 	  opacity: .9;
 }
 
-h2{
+h2, h3, h4{
 	font-family: 'Francois One', sans-serif;
 	color: #1F3073;
 	font-size: 22px;
 }
 
-h3{
-	font-family: 'Francois One', sans-serif;
-	color: #1F3073;
-	font-size: 22px;
-}
-
-#faq{
-	padding-top: 90px;
-}
-
-#proy{
+#faq, #proy, #habilidades{
 	padding-top: 90px;
 }
 
@@ -102,6 +92,23 @@ h3{
 	text-align: left;
 }
 
+.caja-lenguaje{
+	margin-bottom: 25px;
+}
+
+.caja-lenguaje img{
+	display: inline-block;
+	vertical-align: middle;
+	height: 65px;
+}
+
+.caja-lenguaje h4{
+	display: inline-block;
+}
+
+.caja-lenguaje p{
+	padding: 10px 0;
+}
 #logotipo1{
 	float: left;
 }
@@ -424,6 +431,12 @@ div.previoPortafolio img:hover{
 	box-shadow: 6px 6px 15px #888;
 }
 
+div.previoProyecto img {
+	width: 200px;
+	height: 200px;
+	border-radius: 1.5em;
+}
+
 .column {
   float: left;
   width: auto;
@@ -694,6 +707,11 @@ div.previoPortafolio img:hover{
 	}
 
 	div.previoPortafolio img {
+		width: 150px;
+		height: 150px;
+	}
+
+	div.previoProyecto img {
 		width: 150px;
 		height: 150px;
 	}
@@ -969,6 +987,12 @@ div.previoPortafolio img:hover{
 		border-radius: .75em;
 	}
 
+	div.previoProyecto img {
+		width: 110px;
+		height: 110px;
+		border-radius: .75em;
+	}
+
 	.mySlides img{
 		width: 320px;
 	}
@@ -985,10 +1009,3 @@ div.previoPortafolio img:hover{
 	}
 
 }
-
-/*@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 220dpi){
-
-	#fondo{
-		background-image: url(assets/img_2x/fondo_2x.jpg);
-	}
-}*/
