@@ -1,4 +1,45 @@
 // Código js para la galería
+var teclas =
+{
+    UP: 38,
+    DOWN: 40,
+    LEFT: 37,
+    RIGHT: 39,
+    ESC: 27
+}
+
+document.addEventListener("keyup", teclado);
+
+function teclado(datos)
+{
+    //Guardo en "codigo" el número de la tecla oprimida.
+    var codigo = datos.keyCode;
+
+    if (codigo == teclas.UP)
+    {
+        plusSlides(1);
+    }
+    
+    if (codigo == teclas.DOWN)
+    {
+        plusSlides(-1);
+    }
+
+    if (codigo == teclas.LEFT)
+    {
+        plusSlides(-1);
+    }
+
+    if (codigo == teclas.RIGHT)
+    {
+        plusSlides(1);
+    }
+
+    if (codigo == teclas.ESC)
+    {
+        closeModal();
+    }
+}
 
 function openModal() {
   document.getElementById('myModal').style.display = "block";
